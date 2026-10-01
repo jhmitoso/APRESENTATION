@@ -1,0 +1,22 @@
+<h1>Editar Diretor</h1>
+
+<form action="/diretores/{{artista.id}}?_method=PUT" method="POST">
+
+  <div>
+    <label>Nome do Diretor:</label>
+    <input type="text" name="nome" value="{{diretor.nome}}">
+  </div>
+
+  <br>
+
+  <div>
+    <label>Idade:</label>
+    <input type="number" name="ano" value="{{diretor.ano}}">
+  </div>
+
+  <br>
+
+  <button type="submit">
+    Editar
+  </button>
+</form>

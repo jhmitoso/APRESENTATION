@@ -1,0 +1,34 @@
+<h1>Editar Filme</h1>
+
+<form action="/fichas/{{ficha.id}}?_method=PUT" method="POST">
+
+  <div>
+    <label>Nome do Filme:</label>
+    <input type="text" name="nome" value="{{ficha.nome}}">
+  </div>
+
+  <br>
+
+  <div>
+    <label>Direção:</label>
+    <input type="number" name="direcao" value="{{ficha.direcao}}">
+  </div>
+
+  <br>
+
+  <div>
+    <label>Artistas:</label>
+    <input type="number" name="artistas" value="{{ficha.artistas}}">
+  </div>
+
+  <br>
+
+  <div>
+    <label>Sumário:</label>
+    <input type="number" name="sumario" value="{{ficha.sumario}}">
+  </div>
+
+  <button type="submit">
+    Editar
+  </button>
+</form>
